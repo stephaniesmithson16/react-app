@@ -1,20 +1,12 @@
 import { useState } from "react";
-import ListGroup from "./ListGroup";
+import Alert from "./Alert";
 
 function App() {
-  let items = ["New York", "San Francisco", "Chicago", "London", "Paris"];
-
-  const handleSelectItem = (item: string) => {
-    console.log(item);
-  };
-
   return (
     <div>
-      <ListGroup
-        items={items}
-        heading="Cities"
-        onSelectItem={handleSelectItem}
-      />
+      <Alert>
+        World<span>Hello</span>
+      </Alert>
     </div>
   );
 }
